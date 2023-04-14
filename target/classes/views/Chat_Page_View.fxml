@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label alignment="CENTER" prefHeight="35.0" prefWidth="145.0" text="GroupChat" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="323.0" prefWidth="538.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="371.0" layoutY="329.0" mnemonicParsing="false" text="Send" />
+            <ScrollPane layoutX="14.0" layoutY="14.0" prefHeight="287.0" prefWidth="404.0">
+               <content>
+                  <ScrollBar orientation="VERTICAL" prefHeight="292.0" prefWidth="9.0" />
+               </content>
+            </ScrollPane>
+            <TextField layoutX="14.0" layoutY="309.0" prefHeight="72.0" prefWidth="344.0" promptText="Send Message" />
+            <Button alignment="BOTTOM_LEFT" layoutX="453.0" layoutY="14.0" mnemonicParsing="false" text="Logout" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <FlowPane prefHeight="391.0" prefWidth="162.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuButton fx:id="MenuButton" mnemonicParsing="false" text="GroupName">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+            </MenuButton>
+         </children>
+      </FlowPane>
+   </left>
+</BorderPane>
